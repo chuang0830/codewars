@@ -10,15 +10,19 @@
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 function longest(s1, s2) {
-    const arS1 = s1.split('')
-    const arS2 = s2.split('')
-    const ar =[...arS1, ...arS2]
-    return ar.filter((v, i)=>ar.indexOf(v)===i).sort().join('')
-    
-  }
+  const arS1 = s1.split("");
+  const arS2 = s2.split("");
+  const ar = [...arS1, ...arS2];
+  return ar
+    .filter((v, i) => ar.indexOf(v) === i)
+    .sort()
+    .join("");
+}
 
 //good way
 function longest(s1, s2) {
-    return Array.from(new Set(s1 + s2)).sort().join('');
-  }
-const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+  return Array.from(new Set(s1 + s2))
+    .sort()
+    .join("");
+}
+const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");

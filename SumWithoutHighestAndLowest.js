@@ -11,13 +11,10 @@
 // { 1, 1, 11, 2, 3 } => 6
 
 function sumArray(array) {
-    if(array&&array!==null&&array.length>2){
-      const sum = array.reduce((pre,cur)=>
-          pre+cur
-      ,0)
-      return sum - Math.max(...array) - Math.min(...array)
-    }else {
-      return 0
-    }
-   
-   }
+  if (array && array !== null && array.length > 2) {
+    const sum = array.reduce((pre, cur) => pre + cur, 0);
+    return sum - Math.max(...array) - Math.min(...array);
+  } else {
+    return 0;
+  }
+}

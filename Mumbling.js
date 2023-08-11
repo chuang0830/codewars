@@ -7,8 +7,9 @@
 // accum("cwAt") -> "C-Ww-Aaa-Tttt"
 
 function accum(s) {
-    const ar = s.split('');
-    const formatAr = ar.map((v,i)=>
-      (v.toUpperCase() + v.toLowerCase().repeat(i)))
-    return formatAr.join('-')
-  }
+  const ar = s.split("");
+  const formatAr = ar.map(
+    (v, i) => v.toUpperCase() + v.toLowerCase().repeat(i)
+  );
+  return formatAr.join("-");
+}

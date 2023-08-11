@@ -8,7 +8,7 @@
 
 // Input: 123456789 Output: 987654321
 
-function descendingOrder(n){
-    const ar = n.toString().split('')
-    return parseInt( ar.sort((a,b)=> b-a).join(''))
-  }
+function descendingOrder(n) {
+  const ar = n.toString().split("");
+  return parseInt(ar.sort((a, b) => b - a).join(""));
+}

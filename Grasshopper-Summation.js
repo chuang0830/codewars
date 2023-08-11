@@ -11,9 +11,9 @@
 // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 
 var summation = function (num) {
-    const ar =[];
-    for (let i=0;i<=num;i++){
-      ar.push(i)
-    }
-    return ar.reduce((acc,cur)=>acc+cur,0)
+  const ar = [];
+  for (let i = 0; i <= num; i++) {
+    ar.push(i);
   }
+  return ar.reduce((acc, cur) => acc + cur, 0);
+};

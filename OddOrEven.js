@@ -16,6 +16,6 @@
 // Output: "even"
 
 function oddOrEven(array) {
-    const sum = array.reduce((a, c)=> a + c, 0)
-    return sum % 2 ?'odd':'even'
- }
+  const sum = array.reduce((a, c) => a + c, 0);
+  return sum % 2 ? "odd" : "even";
+}

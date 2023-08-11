@@ -1,4 +1,4 @@
-DESCRIPTION:
+//DESCRIPTION:
 // You might know some pretty large perfect squares. But what about the NEXT one?
 
 // Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer.
@@ -12,6 +12,6 @@ DESCRIPTION:
 // 114 --> -1 since 114 is not a perfect square
 
 function findNextSquare(sq) {
-    const sqrt = Math.sqrt(sq)
-    return sqrt%1===0?Math.pow(sqrt+1,2):-1
-  }
+  const sqrt = Math.sqrt(sq);
+  return sqrt % 1 === 0 ? Math.pow(sqrt + 1, 2) : -1;
+}

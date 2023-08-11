@@ -17,10 +17,10 @@
 // Output: "Pls go away and stop eating my sheep"
 
 function warnTheSheep(queue) {
-    const eaten_num = queue.length-1 - queue.indexOf('wolf')
-    if(queue.length-1 === queue.indexOf('wolf')){
-        return `Pls go away and stop eating my sheep`
-    }else{
-        return `Oi! Sheep number ${eaten_num}! You are about to be eaten by a wolf!`
-    }
+  const eaten_num = queue.length - 1 - queue.indexOf("wolf");
+  if (queue.length - 1 === queue.indexOf("wolf")) {
+    return `Pls go away and stop eating my sheep`;
+  } else {
+    return `Oi! Sheep number ${eaten_num}! You are about to be eaten by a wolf!`;
   }
+}
